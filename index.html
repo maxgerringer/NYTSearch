@@ -3,10 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <title>NY Times Article Search</title>
-  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <style>
+      header {background-color: blue; padding: 2em;}
+  </style>
 </head>
-   <body>
-   </body>
+  
+ <body>
+    <header>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>New York Times</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <form> <h2>Search Parameters</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="exampleInputName">Search Term:</label>
+                    <input type="text" class="form-control" placeholder="search term">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="exampleInputName">Number of records to retrieve:</label>
+                    <input type="text" class="form-control" placeholder="tbd">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="exampleInputName">Start Year</label>
+                    <input type="text" class="form-control" placeholder="optional">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="exampleInputName">End Year</label>
+                    <input type="text" class="form-control" placeholder="optional">
+                </div>
+            </div>
+
+        </form>
+    </main>
+ </body>
 
    <script src="script.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
